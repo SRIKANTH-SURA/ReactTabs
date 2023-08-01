@@ -1,0 +1,27 @@
+.tabs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .tabs-list {
+        flex-direction: row;
+    }
+}
+
+.bg-green {
+    background-color: #e6e6e6;
+}
+
+.bg-blue {
+    background-color: #013675;
+}

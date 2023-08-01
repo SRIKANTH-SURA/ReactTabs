@@ -1,0 +1,71 @@
+.tab-item {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.button {
+    font-family: "Roboto";
+    font-size: 20px;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    color: #7d7575;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 2px solid #b0a7a7;
+    text-align: center;
+    margin-right: -64px;
+    clip-path: polygon(0% 0%, 89% 0%, 100% 50%, 90% 100%, 0% 100%);
+    width: 254px;
+}
+
+.tabs-list li:first-child button {
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+} 
+
+.tabs-list li:first-child {
+    z-index: 4;
+}
+
+.tabs-list li:nth-child(2){
+    z-index: 3;
+}
+
+.tabs-list li:nth-child(3){
+    z-index: 2;
+}
+
+.tabs-list li:last-child{
+    z-index: 1;
+}
+
+.tabs-list li:first-child
+
+.tabs-list li:last-child button {
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+
+
+.icon-img {
+    width: 20px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.visited-tab-btn {
+    background-color: #aed8b2 !important;
+    color: #fff !important;
+    border: 2px solid #43A047;
+}
+
+.active-tab-btn {
+    background-color: #013675 !important;
+    color: #fff !important;
+    border: 2px solid #1d3757;
+}
