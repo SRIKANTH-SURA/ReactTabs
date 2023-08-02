@@ -3,6 +3,7 @@
     margin-bottom: 10px;
 }
 
+
 .button {
     font-family: "Roboto";
     font-size: 20px;
@@ -15,14 +16,40 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border: 2px solid #b0a7a7;
     text-align: center;
-    margin-right: -64px;
-    clip-path: polygon(0% 0%, 89% 0%, 100% 50%, 90% 100%, 0% 100%);
-    width: 254px;
+    width: 188px;
+    text-decoration: none;
 }
 
-.tabs-list li:first-child button {
+.tab-item{
+    position: relative;
+    width: 242px;
+    height: 70px;
+    background: #d4d4d4;
+    clip-path: polygon(0% 12%, 86% 12%, 100% 50%, 86% 88%, 0% 88%);
+    margin-right: -50px;
+}
+
+.tab-item a{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    bottom: 10px;
+    background: white;
+    clip-path: polygon(0% 0%, 87% 0%, 100% 50%, 87% 100%, 0% 100%);
+}
+
+.tabs-list li:last-child a{
+    clip-path: none;
+}
+
+.tabs-list li:first-child{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.tabs-list li:first-child a {
     border-top-left-radius: 28px;
     border-bottom-left-radius: 28px;
 } 
@@ -43,11 +70,21 @@
     z-index: 1;
 }
 
-.tabs-list li:first-child
+.tabs-list li:first-child{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
 
-.tabs-list li:last-child button {
+.tabs-list li:last-child a {
     border-top-right-radius: 28px;
     border-bottom-right-radius: 28px;
+    left: 3px;
+}
+
+.tabs-list li:last-child {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    clip-path: polygon(0% 12%, 100% 12%, 100% 50%, 100% 88%, 0% 88%);
 }
 
 
@@ -61,11 +98,19 @@
 .visited-tab-btn {
     background-color: #aed8b2 !important;
     color: #fff !important;
-    border: 2px solid #43A047;
+    /* border: 1px solid #43A047; */
 }
 
 .active-tab-btn {
     background-color: #013675 !important;
     color: #fff !important;
-    border: 2px solid #1d3757;
+    /* border: 1px solid #1d3757; */
+}
+
+.visited-list-item {
+    background: #43a047;
+}
+
+.active-list-item{
+    background: #013675;
 }
