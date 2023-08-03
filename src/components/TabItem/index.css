@@ -1,6 +1,7 @@
 .tab-item {
     list-style-type: none;
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 
@@ -10,81 +11,90 @@
     background-color: #fff;
     outline: none;
     cursor: pointer;
-    padding: 15px 25px;
     color: #7d7575;
     font-weight: bold;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    width: 188px;
+    height: 50px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-.tab-item{
-    position: relative;
-    width: 242px;
-    height: 70px;
-    background: #d4d4d4;
-    clip-path: polygon(0% 12%, 86% 12%, 100% 50%, 86% 88%, 0% 88%);
-    margin-right: -50px;
-}
-
-.tab-item a{
-    position: absolute;
-    top: 10px;
-    left: 0px;
-    right: 0px;
-    bottom: 10px;
-    background: white;
-    clip-path: polygon(0% 0%, 87% 0%, 100% 50%, 87% 100%, 0% 100%);
-}
-
-.tabs-list li:last-child a{
-    clip-path: none;
-}
-
-.tabs-list li:first-child{
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-}
-
-.tabs-list li:first-child a {
-    border-top-left-radius: 28px;
-    border-bottom-left-radius: 28px;
-} 
 
 .tabs-list li:first-child {
-    z-index: 4;
+    border-radius: 25px 0px 0px 25px;
+    z-index: 0;
 }
+
+.tabs-list li:first-child a{
+    padding: 10px 50px 10px 30px;
+    border-radius: 25px 0px 0px 25px;
+    border: 2px solid #b0a9a9;
+    clip-path: polygon(0% 0%, 79% 0%, 99% 50%, 79% 100%, 0% 100%);
+
+}
+
 
 .tabs-list li:nth-child(2){
     z-index: 3;
+    position: relative;
+    width: 270px;
+    /* clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 15% 50%, 0% 0%); */
+    clip-path: polygon(79% 0%, 92% 50%, 79% 100%, 0% 100%, 15% 50%, 0% 0%);
+    margin-left: -40px;
+    background: #b0a9a9;
+}
+
+.tabs-list li:nth-child(2) a {
+    clip-path: polygon(0% 0%, 86% 0%, 100% 50%, 86% 100%, 0% 100%);
+
+    padding: 10px 45px 10px 45px;
+    /* margin-left: -87px; */
+    position: absolute;
+    top: 0px;
+    left: -3px;
+    right: 25px;
+    bottom: 10px;
+    background: white;
+    border: 2px solid #b0a9a9;
 }
 
 .tabs-list li:nth-child(3){
     z-index: 2;
+    position: relative;
+    width: 270px;
+    /* clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 15% 50%, 0% 0%); */
+    clip-path: polygon(84% 0%, 98% 50%, 84% 100%, 0% 100%, 15% 50%, 0% 0%);
+    margin-left: -75px;
+    background: #b0a9a9;
+}
+
+.tabs-list li:nth-child(3) a {
+    clip-path: polygon(0% 0%, 86% 0%, 100% 50%, 86% 100%, 0% 100%);
+    padding: 10px 45px 10px 91px;
+    /* margin-left: -87px; */
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    border: 2px solid #b0a9a9;
 }
 
 .tabs-list li:last-child{
     z-index: 1;
+    border-radius: 0px 25px 25px 0px;
 }
 
-.tabs-list li:first-child{
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-}
 
-.tabs-list li:last-child a {
-    border-top-right-radius: 28px;
-    border-bottom-right-radius: 28px;
-    left: 3px;
-}
-
-.tabs-list li:last-child {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    clip-path: polygon(0% 12%, 100% 12%, 100% 50%, 100% 88%, 0% 88%);
+.tabs-list li:last-child a{
+    padding: 10px 20px 10px 91px;
+    margin-left: -87px;
+    border-radius: 0px 25px 25px 0px;
+    border: 2px solid #b0a9a9;
 }
 
 
@@ -98,19 +108,20 @@
 .visited-tab-btn {
     background-color: #aed8b2 !important;
     color: #fff !important;
-    /* border: 1px solid #43A047; */
+    border: 2px solid #43A047 !important;
 }
 
 .active-tab-btn {
     background-color: #013675 !important;
     color: #fff !important;
-    /* border: 1px solid #1d3757; */
+    border: 2px solid #1d3757 !important;
 }
 
 .visited-list-item {
-    background: #43a047;
+    background: #43a047 !important;
 }
 
 .active-list-item{
-    background: #013675;
+    background: #013675 !important;
 }
+
